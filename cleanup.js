@@ -17,7 +17,7 @@ async function cleanup (opt) {
       }
       return (
         url.indexOf(opt.host) !== -1 &&
-        /\/(?:[\w]+(?:.html|.php))?(?:\?[\w&;=]+)?$/.test(url)
+        /\/(?:[\w]+(?:.html|.php)?)?(?:\?[\w&;=]+)?$/.test(url)
       );
     });
     const res = JSON.stringify(list);
